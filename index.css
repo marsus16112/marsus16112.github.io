@@ -1,0 +1,24 @@
+* {
+  text-align: center;
+}
+#intro {
+  text-align: center;
+}
+.header {
+  color: white;
+font-family: Verdana, Helvetica, sans-serif;
+}
+hr {
+  margin: 0;
+   padding: 0;
+}
+.vl {
+  border-left: 1px solid white;
+  height: 100vh;
+}
+#vl1 {
+  float: left;
+}
+#vl2 {
+  float: right;
+}

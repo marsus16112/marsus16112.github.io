@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+}
+button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  font-family: "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: crosshair;
+}
+p {
+  color: white;
+    font-family: Helvetica, sans-serif;
+}
