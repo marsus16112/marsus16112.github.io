@@ -1,5 +1,7 @@
 * {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 #intro {
   text-align: center;
@@ -11,10 +13,6 @@ font-family: Verdana, Helvetica, sans-serif;
 hr {
   margin: 0;
    padding: 0;
-}
-.vl {
-  border-left: 1px solid white;
-  height: 100vh;
 }
 #vl1 {
   float: left;

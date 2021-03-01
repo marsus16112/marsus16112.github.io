@@ -1,3 +1,7 @@
+* :not(hr) {
+  margin: 0.5em;
+  padding: 0.5em;
+}
 body {
   background-color: black;
 }
@@ -17,4 +21,11 @@ button {
 p {
   color: white;
     font-family: Helvetica, sans-serif;
+}
+a {
+  color: lightblue;
+}
+.vl {
+  border-left: 1px solid white;
+  height: 100vh;
 }
