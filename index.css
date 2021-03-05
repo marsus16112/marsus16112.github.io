@@ -1,7 +1,5 @@
 * {
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 #intro {
   text-align: center;
@@ -19,4 +17,8 @@ hr {
 }
 #vl2 {
   float: right;
+}
+.vl {
+  border-left: 1px solid white;
+  height: 100vh;
 }

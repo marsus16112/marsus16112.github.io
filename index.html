@@ -19,11 +19,24 @@
   <hr />
 </div>
 <div id="content">
-  <p>Welcome to my oofland! Feel free to take a look around, I guess. This webpage mainly comprises of games and gimmicks.</p>
+  <p id="funfact">Please enable JavaScript for this page to work.</p>
   <hr />
   <ul>
 <li>xd</li>
     </ul>
 </div>
+<script>
+var funFact = document.getElementById('funfact');
+var factArray = [
+  'Better than my old webpage!',
+  'Dark mode, all the time!',
+  'Too many random things here!',
+  'This text is randomized!',
+  'We ask "When is 2.2?", but never "How is 2.2?" :(',
+  'missingno',
+  `Help!%20I${htmlEntities('"')}m%20stuck in this textbar!`
+];
+funFact.innerHTML = factArray[Math.floor(Math.random() * factArray.length)];
+  </script>
 </body>
 </html>
