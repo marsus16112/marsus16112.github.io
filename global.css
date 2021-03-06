@@ -14,7 +14,7 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
-p {
+p, div, span {
   color: white;
     font-family: Helvetica, sans-serif;
 }
