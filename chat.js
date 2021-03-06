@@ -1,4 +1,4 @@
-var ws_uri = "ws://marsus16112.github.io:9600";
+var ws_uri = "wss://marsus16112.github.io:9600";
 var websocket = new WebSocket(ws_uri);
 
 // on websocket open:
