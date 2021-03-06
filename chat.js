@@ -63,4 +63,4 @@ function MessageAdd(message) {
 
 	chat_messages.insertAdjacentHTML("beforeend", message);
 	chat_messages.scrollTop = chat_messages.scrollHeight;
-}ß
+}
