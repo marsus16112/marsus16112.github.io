@@ -14,10 +14,10 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
-p, div, span {
+p, div {
   color: white;
     font-family: Helvetica, sans-serif;
 }
-a {
-  color: lightblue;
+h1 {
+  font-family:  Verdana, Helvetica, sans-serif;
 }
