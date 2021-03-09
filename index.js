@@ -1,7 +1,7 @@
 let funFact = document.getElementById('funfact');
 let factArray = [
   'Better than my old webpage!',
-  'Dark mode, all the time!',
+  'Light mode, all the time!',
   'Too many random things here!',
   'This text is randomized!',
   'We ask "When is 2.2?", but never "How is 2.2?" :(',

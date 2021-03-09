@@ -1,12 +1,19 @@
+* {
+  font-family: DroidSerif;
+  color: black;
+}
+@font-face {
+  font-family: DroidSerif;
+  src: url('./DroidSerif-Regular-webfont.woff');
+}
 body {
-  background-color: black;
+  background-color: #eeeeee;
 }
 button {
-  background-color: white;
+  background-color: black;
   border: none;
-  color: black;
+  color: #eeeeee;
   padding: 15px 32px;
-  font-family: "Trebuchet MS", Verdana, Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -14,10 +21,6 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
-p, div {
-  color: white;
-    font-family: Helvetica, sans-serif;
-}
-h1 {
-  font-family:  Verdana, Helvetica, sans-serif;
+hr {
+  border-color: black;
 }
