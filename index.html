@@ -11,8 +11,8 @@
   <span id="move">Try to click me.</span>
   <script>
     document.getElementById('move').addEventListener('mouseover', e => {
-        e.target.style.top = Math.random() * (window.innerHeight / 2) + 'px';
-        e.target.style.left = Math.random() * (window.innerWidth / 2) + 'px';
+        e.target.style.top = Math.random() * window.innerHeight + 'px';
+        e.target.style.left = Math.random() * window.innerWidth + 'px';
     });
     document.getElementById('move').addEventListener('click', e => {
         alert("GOT ME!");
