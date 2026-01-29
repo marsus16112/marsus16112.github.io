@@ -1,3 +1,7 @@
+const K = 8.987551785972e9; // coulomb const. Nm^2/C^2
+const m_e = 9.109e-31; // mass of electron kg
+const Q = 1.602176634e-19; // charge unit Coulombs
+
 class MainMenu extends Phaser.Scene {
     constructor() {
         super({key: 'MainMenu'});
@@ -11,7 +15,7 @@ class MainMenu extends Phaser.Scene {
     create() {
         try {
     	console.log('Scene creating objects...')
-        let rectangle = new Phaser.Rectangle(100, 100, 100, 100);
+        let rectangle = new Phaser.GameObjects.Rectangle(this, 100, 100, 100, 100);
         } catch (err) {
             alert(err);
         }
@@ -32,16 +36,30 @@ class Tutorial extends Phaser.Scene {
 }
 
 class Electron extends Phaser.GameObjects.Image {
-    constructor(x, y) {
-        super(x, y, 'electron');
-        charge = -1;
+    constructor(scene, x, y) {
+        super(scene, x, y, 'electron');
+        let charge = -Q;
+        console.log(this);
+        scene.add.existing(this);
+    }
+    field(a, b) { // return electric field (N/C) at point (a, b)
+        let r = Math.hypot(a - x, b - y);
+        let F = K * Q / (r * r);
+        return [-F * (a - x) / r, -F * (b - y) / r];
     }
 }
 
 class Proton extends Phaser.GameObjects.Image {
-    constructor(x, y) {
-        super(x, y, 'proton');
-        charge = 1;
+    constructor(scene, x, y) {
+        super(scene, x, y, 'proton');
+        let charge = Q;
+        this.add.existing(this);
+        scene.add.existing(this);
+    }
+    field(a, b) { // return electric field at point (a, b)
+        let r = Math.hypot(a - x, b - y);
+        let F = K * Q / (r * r);
+        return [F * (a - x) / r, F * (b - y) / r];
     }
 }
 
@@ -54,7 +72,7 @@ class Level extends Phaser.Scene {
         this.load.image('electron', 'assets/electron.png');
     }
     init() {
-        this.add.image(400, 300, 'electron');
+        let electron = new Electron(this, 300, 400);
         
     }
     create(){}
