@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-  #move {
-    position: absolute;
-  }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>electro</title>
+   <script src="https://cdn.jsdelivr.net/npm/phaser@3.86.0/dist/phaser.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.86.0/dist/phaser.min.js"></script>
 </head>
 <body>
-  <span id="move">Try to click me.</span>
-  <script>
-    document.getElementById('move').addEventListener('mouseover', e => {
-        e.target.style.top = Math.random() * window.innerHeight + 'px';
-        e.target.style.left = Math.random() * window.innerWidth + 'px';
-    });
-    document.getElementById('move').addEventListener('click', e => {
-        alert("GOT ME!");
-    });
-  </script>
+  <noscript>Please enable JavaScript in your browser settings to play.</noscript>
+  <script src="index.js"></script>
 </body>
 </html>
