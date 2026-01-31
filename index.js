@@ -68,8 +68,8 @@ class Level extends Phaser.Scene {
         super({key: 'Level'});
     }
     preload() {
-        this.load.image('proton', 'assets/proton.png');
-        this.load.image('electron', 'assets/electron.png');
+        this.load.image('proton', 'https://media.discordapp.net/attachments/675857772528664586/1466993791935447070/proton.png?ex=697ec3ef&is=697d726f&hm=567c4456a1ec3091d981e9fb9810448ed0436ee014ab222b85fa7f1552a50d45&=&format=webp&quality=lossless&width=1508&height=1508');
+        this.load.image('electron', 'https://cdn.discordapp.com/attachments/675857772528664586/1466993791553507338/electron.png?ex=697ec3ef&is=697d726f&hm=14f778403240c4c99a564f75f5ed762bf501fdf18e69b3d060d8e7b6ddfcb271');
     }
     init() {
         let electron = new Electron(this, 300, 400);
