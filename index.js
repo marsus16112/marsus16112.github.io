@@ -68,8 +68,8 @@ class Level extends Phaser.Scene {
         super({key: 'Level'});
     }
     preload() {
-        this.load.image('proton', 'assets/proton.png');
-        this.load.image('electron', 'assets/electron.png');
+        this.load.image('proton', '/assets/proton.png');
+        this.load.image('electron', '/assets/electron.png');
     }
     init() {
         let electron = new Electron(this, 300, 400);
